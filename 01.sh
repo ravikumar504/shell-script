@@ -1,15 +1,24 @@
 #!/bin/bash
 
+NUMBER=$1
 
-WEEK=$(date | cut -d " " -f1)
-
-
-if [ $WEEK = Sunday ]
-then 
-    echo "today holiday"
+if [$NUMBER -gt 100]
+then
+    echo "given number is gt 100"
 else
-    echo "go to school"
-fi
+    echo "given number is less than 100"
+fi 
+
+
+# WEEK=$(date | cut -d " " -f1)
+
+
+# if [ $WEEK = Sunday ]
+# then 
+#     echo "today holiday"
+# else
+#     echo "go to school"
+# fi
 
 
 
