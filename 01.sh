@@ -4,7 +4,7 @@
 WEEK=$(date | cut -d " " -f1)
 
 
-if [ "$WEEK" = "Sunday" ]
+if [ "$WEEK" -eq "Sunday" ]
 then 
     echo "today holiday"
 else
