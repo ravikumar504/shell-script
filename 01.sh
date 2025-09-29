@@ -2,4 +2,4 @@
 
 MOVIES=("rrr" "og" "hhvm")
 
-echo "$MOVIES"
+echo "$MOVIES[0]"
