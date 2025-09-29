@@ -1,8 +1,14 @@
 #!/bin/bash
 
 
+USERID=$(id -u)
 
-sudo dnf install mysql-server -y 
+if [ $USERID -ne 0 ]
+then 
+    echo "you need root access"
+fi
+
+dnf install mysql -y
 
 
 
