@@ -1,12 +1,5 @@
 #!/bin/bash
 
-TIMESTAMP=$(date)
+MOVIES=("rrr" "og" "hhvm")
 
-echo "$TIMESTAMP"
-
-NUMBER1=$1
-NUMBER2=$2
-
-SUM=($NUMBER1+$NUMBER2)
-
-echo "$SUM"
+echo "${MOVIES[0]}"
