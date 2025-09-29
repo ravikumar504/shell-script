@@ -2,6 +2,7 @@
 
 DAY=$(date)
 WEEK=$(echo "$DAY" | cut -d " " -f1)
+echo "$WEEK"
 
 if ($WEEK -eq Sunday)
 then 
