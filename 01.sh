@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1=$1
-PERSON2=$2
+echo "enter your username"
 
-echo "$PERSON1"
-echo "$PERSON2"
+raed -s USERNAME
+
+echo "$USERNAME"
