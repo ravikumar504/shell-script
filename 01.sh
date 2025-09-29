@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-WEEK=$(date | cut -d " " -f2)
+WEEK=$(date | cut -d " " -f1)
 echo "$WEEK"
 
-if ($WEEK -eq Sunday)
+if ($WEEK -ne Sunday)
 then 
-    echo "today is holiday"
+    echo "today go to school"
 else
-    echo "today i have go to school"
+    echo "today holiday"
 fi
