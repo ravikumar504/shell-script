@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DAY=$(date)
-WEEK=$(echo "$DAY" | cut -d " " -f1)
+
+WEEK=$(date | cut -d " " -f1)
 echo "$WEEK"
 
 if ($WEEK -eq Sunday)
