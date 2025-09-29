@@ -6,9 +6,9 @@ WEEK=$(date | cut -d " " -f1)
 
 if [ "$WEEK" = "Sunday" ];
 then 
-    echo "today go to school"
-else
     echo "today holiday"
+else
+    echo "go to school"
 fi
 
 
