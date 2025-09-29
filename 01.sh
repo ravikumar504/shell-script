@@ -1,13 +1,23 @@
 #!/bin/bash
 
-NUMBER=$1
 
-if [ $NUMBER -gt 100 ]
-then
-    echo "given number is gt 100"
-else
-    echo "given number is less than 100"
-fi 
+
+sudo dnf install mysql-server -y 
+
+
+
+
+
+
+
+# NUMBER=$1
+
+# if [ $NUMBER -gt 100 ]
+# then
+#     echo "given number is gt 100"
+# else
+#     echo "given number is less than 100"
+# fi 
 
 
 # WEEK=$(date | cut -d " " -f1)
