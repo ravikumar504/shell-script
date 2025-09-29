@@ -1,9 +1,9 @@
 #!/bin/bash
 
 DAY=$(date)
-echo "$DAY"
+WEEK=$(echo "$DAY" | cut -d " " -f1)
 
-if ($DAY -eq Sunday)
+if ($WEEK -eq Sunday)
 then 
     echo "today is holiday"
 else
