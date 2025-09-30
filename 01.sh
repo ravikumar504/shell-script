@@ -1,30 +1,38 @@
 #!/bin/bash
 
 
-USERID=$(id -u)
-
-if [ $USERID -ne 0 ]
-then 
-    echo "you need root access"
-    exit 1
-fi
-
-dnf list installed mysql
+for i in {0..5}
+do 
+    echo $i 
+done
 
 
-if [ $? -ne 0 ]
-then 
-    dnf install mysql -y
-    if [ $? -ne 0 ]
-    then 
-        echo "mysql installation failure"
-        exit 1
-    else    
-        echo "mysql installation success"
-    fi
-else 
-    echo "mysql already installed"
-fi
+
+
+# USERID=$(id -u)
+
+# if [ $USERID -ne 0 ]
+# then 
+#     echo "you need root access"
+#     exit 1
+# fi
+
+# dnf list installed mysql
+
+
+# if [ $? -ne 0 ]
+# then 
+#     dnf install mysql -y
+#     if [ $? -ne 0 ]
+#     then 
+#         echo "mysql installation failure"
+#         exit 1
+#     else    
+#         echo "mysql installation success"
+#     fi
+# else 
+#     echo "mysql already installed"
+# fi
     
  
     
