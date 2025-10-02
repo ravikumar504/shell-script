@@ -1,4 +1,5 @@
 #!/bin/bash
 
-Files_TO_DELETE=$(find . -name "*.log" -mtime +14)
+SOURCEDIR=/home/ec2-user/
+Files_TO_DELETE=$(find $SOURCEDIR -name "*.log" -mtime +14)
 echo "$FILES_TO_DELETE"
