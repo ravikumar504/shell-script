@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# SOURCE="/home/ec2-user/"
-# FILESDELETE=$(find $SOURCE -name "*.log" -mtime +14)
-# echo "$FILESDELETE"
+ SOURCE="/home/ec2-user/"
+FILESDELETE=$(find $SOURCE -name "*.log" -mtime +14)
+echo "$FILESDELETE"
 
 while read -r line 
 do  
  echo $line
-done < 01.sh
+done < $FILESDELETE
