@@ -7,4 +7,4 @@ FILESDELETE=$(find $SOURCE -name "*.log" -mtime +14)
 while read -r file 
 do  
     echo $file
-done <<< $FILESDELETE
+done < $FILESDELETE
