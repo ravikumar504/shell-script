@@ -1,4 +1,4 @@
-# #!/bin/bash
+
 
 # SOURCE="/home/ec2-user/"
 # FILESDELETE=$(find $SOURCE -name "*.log" -mtime +14)
@@ -13,8 +13,8 @@
 
 
 
-
-FILEPATH=/home/ec2-user/
+#!/bin/bash
+FILEPATH="/home/ec2-user/test.txt"
 
 if [ -e "$FILEPATH" ] && [ -r "$FILEPATH " ]
 then 
