@@ -14,7 +14,7 @@
 
 
 
-FILEPATH=/home/ec2-user/test.txt
+FILEPATH=/home/ec2-user/
 
 if [ -e "$FILEPATH" ] && [ -r "$FILEPATH " ]
 then 
