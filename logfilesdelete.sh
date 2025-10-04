@@ -16,7 +16,7 @@
 #!/bin/bash
 FILEPATH="/home/ec2-user/test.txt"
 
-if [ -e "$FILEPATH" ] && [ -r "$FILEPATH " ]
+if [ -e "$FILEPATH" ] && [ -r "$FILEPATH" ]
 then 
     echo "file exists and readable"
 
